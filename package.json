@@ -1,0 +1,20 @@
+{
+  "name": "testflow-percy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Percy visual regression automation for TestFlow web app",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:visual": "cypress run --spec 'cypress/e2e/visual/**'",
+    "cy:run:visual:percy": "percy exec -- cypress run --spec 'cypress/e2e/visual/**'",
+    "test": "npm run cy:run:visual",
+    "test:percy": "npm run cy:run:visual:percy"
+  },
+  "devDependencies": {
+    "@bahmutov/cy-grep": "^3.0.4",
+    "@percy/cli": "^1.31.14",
+    "@percy/cypress": "^3.1.8",
+    "cypress": "^15.17.0"
+  }
+}

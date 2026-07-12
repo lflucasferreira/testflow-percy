@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "types": ["cypress", "@percy/cypress"]
+  },
+  "include": ["cypress/**/*.js", "cypress/**/*.ts", "cypress.config.js"]
+}
